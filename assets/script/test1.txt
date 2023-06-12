@@ -1,0 +1,13 @@
+N is NPC
+
+global.test1:
+N: Hello.
+console.log("inline console.log works!");
+let test = ()=>{console.log("inline log via function works!");};test();
+console.log("test " +
+"multiline");
+test = 5
+N: Hi.
+N: Welcome.
+N: I already said hello.
+N: ???

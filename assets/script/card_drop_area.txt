@@ -1,0 +1,17 @@
+namespace component.card_drop_area
+
+meta:
+components = ['interactable']
+props = {card: 'object'}
+
+construct:
+self.card = 0
+
+init:
+
+interact:
+if world.entities[-self.card].card.canDrop:
+  world.entities[-self.card].card.canDrop = false
+  world.entities[-self.card].card.collectOnCollide = false
+  world.entities[-self.card].transform.x = playerEntity.transform.centerX
+  world.entities[-self.card].transform.y = playerEntity.transform.centerY+20

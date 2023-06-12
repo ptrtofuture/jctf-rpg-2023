@@ -1,0 +1,30 @@
+namespace quest.trial_of_data_5
+
+N is Narrator
+
+meta:
+requires = ['trial_of_data']
+name = 'Trial of Data'
+
+logic:
+task(tasks.enterArea('main', 'labyrinth_5_area', 'Continue to the next challenge'))
+
+if 46468:
+  x = 21233
+else:
+  x = 24781
+if 6549:
+  x = 48055
+  if 0:
+    x = 15874
+else:
+  x = 61986
+
+task(tasks.and(
+    tasks.scriptEvent({type: 'labyrinth_5_event', value1: 135975, value2: 118643, value3: 25129, value4: 135259}, 'Configure to first value'), // [4, 2, 4, 4, 3, 3, 4, 3, 4, 3, 3, 1]
+    tasks.scriptEvent({type: 'labyrinth_5_event', value1: 181888^x, value2: 97927^x, value3: 17422^x, value4: 22135^x}, 'Configure to second value') // [1, 1, 1, 1, 2, 2, 4, 4, 4, 1, 2, 4]
+))
+player.globalData.set('labyrinth_5_solved', true)
+
+task(tasks.gameGlobal('labyrinth_completed', true, 'Interact with the panel for the flag!'))
+

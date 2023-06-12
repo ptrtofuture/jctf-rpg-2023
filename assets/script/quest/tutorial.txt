@@ -1,0 +1,15 @@
+namespace quest.tutorial
+
+N is Narrator
+
+meta:
+requires = []
+name = 'Tutorial'
+
+logic:
+task(tasks.and(
+    tasks.enterArea('main', 'tutorial_wasd', 'Walk with WASD'),
+    tasks.enterArea('main', 'tutorial_right', 'Walk to the right')
+))
+task(tasks.enterArea('main', 'tutorial_panel', 'Walk to the panel'))
+task(tasks.scriptEvent({type: 'tutorial_panel_interact'}, 'Interact with the panel using E'))

@@ -1,0 +1,139 @@
+namespace component.labyrinth_3_challenge_panel
+
+N is Narrator
+P is Panel
+
+meta:
+components = ['interactable']
+props = {gameFlagName: 'string'}
+
+construct:
+self.gameFlagName = ''
+
+init:
+
+interact:
+N: There's something being displayed on the panel: "To unlock the gate, please enter administrator password".
+N: It seems that there is a password recovery option available. Do you want to try it?
+> Let's try!
+  P: In order to reset the password you need to answer 10 recovery questions correctly.
+  P: In normal recovery mode, full plaintext answer would have to be provided. Due to high volume of failed recovery attempts, 4 answers will be provided and the correct one has to be selected.
+  P: Please answer with the same data as provided during terminal registration.
+
+  // dccdbcbdbc
+
+  answer_1_correct = false
+  P: Who founded the jCTF team?
+  > disconnect3d
+  > haqpl
+  > Me!
+    P: In your dreams!
+  > Neither
+    answer_1_correct = true
+
+  P: Which domain currently hosts the jCTF team's homepage?
+  > justctf.team
+    answer_2 = 1
+  > jctf.pl
+    answer_2 = 2
+  > justcatthefish.team
+    answer_2 = 3
+  > 2023.justctf.team
+    answer_2 = 4
+
+  P: How many current jCTF members have anime avatars?
+  > 0
+    answer_3 = 1
+  > 1
+    answer_3 = 2
+  > 2
+    answer_3 = 3
+  > 3
+    answer_3 = 4
+
+  P: What year did jCTF ▮▮w?Ť▮ǼÓŬƙ̥̠Ɖ Error. Some information was corrupted. We apologize for the inconvenience.
+  > 2019
+    answer_4 = 1
+  > 2020
+    answer_4 = 2
+  > 2024
+    answer_4 = 3
+  > 2025
+    answer_4 = 4
+
+  P: Which place did jCTF team reach on the CTFTime ranking in 2024?
+  > ▮▮▮▮
+    answer_5 = 1
+  > ▮▮▮▮
+    answer_5 = 2
+  > ▮▮▮▮
+    answer_5 = 3
+  > ▮▮▮▮
+    answer_5 = 4
+
+  P: ▮▮▮▮▮▮▮▮▮won▮▮▮▮▮▮2023?
+  > ▮▮▮▮
+    answer_6 = 1
+  > ▮▮▮▮
+    answer_6 = 2
+  > ▮▮▮▮
+    answer_6 = 3
+  > ▮▮▮▮
+    answer_6 = 4
+
+  P: ▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮
+  > ▮▮▮▮
+    answer_7 = 1
+  > ▮▮▮▮
+    answer_7 = 2
+  > ▮▮▮▮
+    answer_7 = 3
+  > ▮▮▮▮
+    answer_7 = 4
+
+  answer_8_correct = false
+  P: ▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮
+  > ▮▮▮▮
+  > ▮▮▮▮
+  > ▮▮▮▮
+  > ▮▮▮▮
+    answer_8_correct = true
+
+  answer_9_correct = true
+  P: ▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮
+  > ▮▮▮▮
+    answer_9_correct = false
+  > ▮▮▮▮
+  > ▮▮▮▮
+    answer_9_correct = false
+  > ▮▮▮▮
+    answer_9_correct = false
+
+  answer_10_correct = false
+  P: ▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮
+  > ▮▮▮▮
+  > ▮▮▮▮
+  > ▮▮▮▮
+    answer_10_correct = true
+  > ▮▮▮▮
+
+  hash = 0
+  hash = Math.imul(hash, 0x7d0063c) ^ answer_6
+  hash = Math.imul(hash, 0xe2a467ef) ^ answer_3
+  hash = (hash + 0x7aeaddd2) & 0xffffffff
+  hash = Math.imul(hash, 0x4398389c) ^ answer_7
+  hash = Math.imul(hash, 0xb3342b2b) ^ answer_5
+  hash = Math.imul(hash, 0xcd53a4) ^ answer_4
+  hash = Math.imul(hash, 0x400b476b) ^ answer_2
+
+  if hash === -730341985 && answer_1_correct && answer_8_correct && answer_9_correct && answer_10_correct:
+    N: It seems that you managed to somehow figure out answers for all the questions!
+    player.globalData.set(self.gameFlagName, true)
+    N: The terminal seems to give a feeling of dissatisfaction as the gate opened. Is it just my imagination?
+    P: Access granted. This incident will be reported!!
+  else:
+    P: At least one answer is incorrect. Please check your answers and try again later.
+> Try again later
+  N: You tell the terminal that the terminal should try to ask you for password again later.
+  N: The terminal plays along and shows a "Service Temporarily Unavailable" screen, telling YOU to try again later and restarts shortly afterwards.
+  N: The audacity! The AI future is scary!

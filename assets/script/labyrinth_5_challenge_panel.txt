@@ -1,0 +1,32 @@
+namespace component.labyrinth_5_challenge_panel
+
+P is Panel
+
+meta:
+components = ['interactable']
+props = {coordinator: 'object', value_no: 'number', value_0: 'number', value_1: 'number', value_2: 'number', value_3: 'number'}
+
+construct:
+self.coordinator = 0
+self.value_no = 0
+self.value_0 = 0
+self.value_1 = 1
+self.value_2 = 2
+self.value_3 = 3
+
+init:
+interactable.interactText = "Use panel"
+
+interact:
+value_text = world.entities[-self.coordinator].labyrinth_5_challenge_coordinator.values[self.value_no] !== undefined ? world.entities[-self.coordinator].labyrinth_5_challenge_coordinator.values[self.value_no] : 'unknown'
+P: Current value is {value_text}. Please select new value.
+> {self.value_0}
+  world.entities[-self.coordinator].labyrinth_5_challenge_coordinator.values[self.value_no] = self.value_0
+> {self.value_1}
+  world.entities[-self.coordinator].labyrinth_5_challenge_coordinator.values[self.value_no] = self.value_1
+> {self.value_2}
+  world.entities[-self.coordinator].labyrinth_5_challenge_coordinator.values[self.value_no] = self.value_2
+> {self.value_3}
+  world.entities[-self.coordinator].labyrinth_5_challenge_coordinator.values[self.value_no] = self.value_3
+> Cancel
+world.entities[-self.coordinator].labyrinth_5_challenge_coordinator.run('updateValues')

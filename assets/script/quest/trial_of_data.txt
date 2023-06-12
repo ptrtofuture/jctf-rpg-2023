@@ -1,0 +1,22 @@
+namespace quest.trial_of_data
+
+N is Narrator
+
+meta:
+requires = ['never']
+name = 'Trial of Data'
+
+logic:
+task(tasks.gameGlobal('labyrinth_1_solved', true, 'Use the panel to open the gate'))
+task(tasks.enterArea('main', 'labyrinth_1_past_gate', 'Pass through the gate'))
+
+task(tasks.enterArea('main', 'labyrinth_2_near_panel', 'Find a way to the second panel'))
+task(tasks.gameGlobal('labyrinth_2_solved', true, 'Use the panel to open the gate'))
+task(tasks.enterArea('main', 'labyrinth_2_past_gate', 'Pass through the gate'))
+
+task(tasks.enterArea('main', 'labyrinth_3_near_panel', 'Find a way to the next challenge'))
+task(tasks.gameGlobal('labyrinth_3_solved', true, 'Solve the puzzle on the panel'))
+task(tasks.enterArea('main', 'labyrinth_3_past_gate', 'Pass through the gate'))
+
+task(tasks.enterArea('main', 'labyrinth_4_past_gate', 'Find a way to the next challenge'))
+task(tasks.gameGlobal('labyrinth_4_solved', true, 'Interact with the panel'))

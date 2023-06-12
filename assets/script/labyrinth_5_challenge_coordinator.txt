@@ -1,0 +1,25 @@
+namespace component.labyrinth_5_challenge_coordinator
+
+C is Coordinator
+
+meta:
+components = []
+props = {}
+
+construct:
+self.values = {}
+
+init:
+
+updateValues:
+hasAllValues = true
+for (let i = 0; i < 12; i++)
+  if (self.values[i] === undefined)
+    hasAllValues = false;
+
+if hasAllValues:
+  value1 = self.values[2] + self.values[7] + self.values[9]
+  value2 = self.values[4] + self.values[5] + self.values[6]
+  value3 = self.values[1] ^ self.values[11] ^ self.values[12]
+  value4 = self.values[0] + self.values[3] - self.values[7] + self.values[8] + self.values[10]
+  emit({ type: 'labyrinth_5_event', value1: value1, value2: value2, value3: value3, value4: value4 })

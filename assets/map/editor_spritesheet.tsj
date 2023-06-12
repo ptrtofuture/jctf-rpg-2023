@@ -1,0 +1,54 @@
+{
+    "columns": 0,
+    "grid": {
+        "height": 1,
+        "orientation": "orthogonal",
+        "width": 1
+    },
+    "margin": 0,
+    "name": "editor",
+    "properties": [
+        {
+            "name": "spritesheet",
+            "type": "bool",
+            "value": true
+        }
+    ],
+    "spacing": 0,
+    "objectalignment": "topleft",
+    "tilecount": 3,
+    "tiledversion": "1.10.1",
+    "tilewidth": 16,
+    "tileheight": 16,
+    "tiles": [
+        {
+            "id": 0,
+            "image": "../static/spritesheets/editor.png",
+            "imagewidth": 18,
+            "imageheight": 18,
+            "x": 1,
+            "y": 1,
+            "width": 16,
+            "height": 16,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "point"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ]
+        }
+    ],
+    "type": "tileset",
+    "version": "1.10"
+}

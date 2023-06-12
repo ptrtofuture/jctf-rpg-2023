@@ -1,0 +1,1019 @@
+{
+    "columns": 0,
+    "grid": {
+        "height": 1,
+        "orientation": "orthogonal",
+        "width": 1
+    },
+    "margin": 0,
+    "name": "player",
+    "properties": [
+        {
+            "name": "spritesheet",
+            "type": "bool",
+            "value": true
+        }
+    ],
+    "spacing": 0,
+    "objectalignment": "topleft",
+    "tilecount": 3,
+    "tiledversion": "1.10.1",
+    "tilewidth": 150,
+    "tileheight": 234,
+    "tiles": [
+        {
+            "id": 21,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 1,
+            "y": 471,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "stand_down"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 17,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 605,
+            "y": 706,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "stand_left"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 4,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 16,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 454,
+            "y": 706,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "stand_right"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 22,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 303,
+            "y": 706,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "stand_up"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 3,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 8,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 152,
+            "y": 706,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_down_0"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 3,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 18,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 1,
+            "y": 706,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_down_1"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 19,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 605,
+            "y": 471,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_down_2"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 20,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 454,
+            "y": 471,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_down_3"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 9,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 303,
+            "y": 471,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_left_0"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "id": 2,
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 10,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 152,
+            "y": 471,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_left_1"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "id": 2,
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 11,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 1,
+            "y": 1,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_left_2"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "id": 2,
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 3,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 14,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 605,
+            "y": 236,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_left_3"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "id": 2,
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 12,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 454,
+            "y": 236,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_right_0"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "id": 2,
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 5,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 303,
+            "y": 236,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_right_1"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "id": 2,
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 6,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 152,
+            "y": 236,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_right_2"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "id": 2,
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 15,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 1,
+            "y": 236,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_right_3"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "id": 2,
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 13,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 605,
+            "y": 1,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_up_0"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "id": 2,
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 23,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 454,
+            "y": 1,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_up_1"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "id": 2,
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 24,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 303,
+            "y": 1,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_up_2"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "id": 2,
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "id": 25,
+            "image": "../static/spritesheets/player.png",
+            "imagewidth": 756,
+            "imageheight": 941,
+            "x": 152,
+            "y": 1,
+            "width": 150,
+            "height": 234,
+            "properties": [
+                {
+                    "name": "sprite_refid",
+                    "type": "string",
+                    "value": "walk_up_3"
+                },
+                {
+                    "name": "sprite_auto_component",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "sprite_layer",
+                    "type": "int",
+                    "value": 1
+                }
+            ],
+            "objectgroup": {
+                "draworder": "index",
+                "id": 2,
+                "name": "",
+                "objects": [
+                    {
+                        "height": 21,
+                        "id": 2,
+                        "name": "",
+                        "rotation": 0,
+                        "type": "",
+                        "visible": true,
+                        "width": 85,
+                        "x": 29,
+                        "y": 201
+                    }
+                ],
+                "opacity": 1,
+                "type": "objectgroup",
+                "visible": true,
+                "x": 0,
+                "y": 0
+            }
+        }
+    ],
+    "type": "tileset",
+    "version": "1.10"
+}

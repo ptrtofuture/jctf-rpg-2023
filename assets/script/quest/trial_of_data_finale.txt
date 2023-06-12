@@ -1,0 +1,16 @@
+namespace quest.trial_of_data_finale
+
+N is Narrator
+
+meta:
+requires = ['trial_of_data_5']
+name = 'Trial of Data: Finale'
+
+logic:
+task(tasks.gameGlobal('labyrinth_completed', true, 'Interact with the panel for the flag!'))
+N: Congratulations on completing the Trial of Data!
+N: It's time to reveal the flag...
+player.flagReveal.reveal('labyrinth_flag', 'TRIAL_OF_DATA')
+task(tasks.gameGlobalSet('labyrinth_flag'), 'Wait for server sync')
+flag = player.globalData.get('labyrinth_flag')
+N: The flag is: {flag}

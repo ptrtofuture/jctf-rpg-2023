@@ -1,0 +1,16 @@
+namespace component.map_single_sign
+
+S is Sign
+
+meta:
+components = ['interactable']
+props = {text: 'string'}
+
+construct:
+self.text = ''
+
+init:
+interactable.interactText = "Read"
+
+interact:
+S: {self.text}

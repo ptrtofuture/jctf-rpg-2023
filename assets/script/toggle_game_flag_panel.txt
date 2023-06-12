@@ -1,0 +1,30 @@
+namespace component.toggle_game_flag_panel
+
+N is Narrator
+
+meta:
+components = ['interactable']
+props = {gameFlagName: 'string'}
+
+construct:
+self.gameFlagName = ''
+
+init:
+value = !!player.globalData.get(self.gameFlagName)
+sprite.sprite = value ? 'panel_on' : 'panel_off'
+
+interact:
+N: You can toggle something on this panel!
+N: It might bring about destruction or a miracle! Anything is possible...
+N: Well then, do you use the panel?
+> Yes, of course!
+  value = !player.globalData.get(self.gameFlagName)
+  sprite.sprite = value ? 'panel_on' : 'panel_off'
+  player.globalData.set(self.gameFlagName, value)
+  N: Something changed...
+> No, the responsibility is too great for me...
+  N: Using the panel is indeed not for the irresponsible!
+  N: Feel free to use the panel whenever you are ready.
+> Narrator?
+  N: You loudly say "Narrator?". However, there is no response!
+  N: The narrator wonders why...

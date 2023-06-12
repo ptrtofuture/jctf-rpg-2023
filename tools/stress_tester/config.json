@@ -1,0 +1,14 @@
+{
+  "connect": {
+    "target": "ws://127.0.0.1:8081",
+    "serverKey": "jeWxH3{uA5@d2.I"
+  },
+  "groups": [
+    {
+      "test": "trial_of_data_spawn_area",
+      "connections": 2,
+      "rampUp": 1,
+      "rampUpInterval": 100
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+N is NPC
+
+global.test2:
+N: Hello. This is a test of the dialogue system.
+N: Let's start from the choice test.
+> Option 1
+  choice = 1
+  N: You choose Option 1. Good choice.
+> Option 2
+  choice = 2
+  N: You choose Option 2. Good choice.
+
+N: Let me just quickly confirm, you chose {choice}.
+
+/*if choice == 1
+  N: Let me confirm it again, you chose 1.
+elif choice == 2
+  N: Let me confirm it again, you chose 2.
+else
+  N: I forgot what you chose, please debug the script.*/

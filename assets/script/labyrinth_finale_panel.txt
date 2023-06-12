@@ -1,0 +1,24 @@
+namespace component.labyrinth_finale_challenge_panel
+
+P is Panel
+N is Narrator
+
+meta:
+components = ['interactable']
+props = {gameFlagName: 'string'}
+
+construct:
+self.gameFlagName = ''
+
+init:
+interactable.interactText = "Use panel"
+
+interact:
+P: "Congratulations on reaching the end of this level."
+player.globalData.set(self.gameFlagName, true)
+if player.globalData.get('labyrinth_flag') !== undefined:
+  N: You remember already seeing the flag for this level just a second ago.
+  N: But for some reason you can't remember it...
+  N: But then you think that it's probably in the game global data.
+  flag = player.globalData.get('labyrinth_flag')
+  N: And you are right: Flag: {flag}

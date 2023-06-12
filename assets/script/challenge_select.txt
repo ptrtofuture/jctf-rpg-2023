@@ -1,0 +1,32 @@
+namespace component.challenge_select
+
+P is Panel
+
+meta:
+components = ['interactable']
+props = {}
+
+construct:
+
+init:
+interactable.interactText = "Use panel"
+
+interact:
+if player.globalData.get('challenge') === undefined:
+  P: Welcome to the game.
+  P: There are two challenges you can select.
+  P: The choice can not be changed later within a game run. Please choose wisely.
+  > Trial of Bugs
+    player.globalData.set('challenge', player.globalData.get('challenge') || 'trial_of_bugs')
+  > Trial of Data
+    player.globalData.set('challenge', player.globalData.get('challenge') || 'trial_of_data')
+emit({type: 'tutorial_panel_interact'})
+
+should_enter_trial_of_bugs = player.globalData.get('challenge') === 'trial_of_bugs'
+should_enter_trial_of_data = player.globalData.get('challenge') === 'trial_of_data'
+if should_enter_trial_of_bugs:
+  playerEntity.transform.x = 10125
+  playerEntity.transform.y = 4088
+if should_enter_trial_of_data:
+  player.quest.addQuest('trial_of_data')
+  playerEntity.player_movement.teleportToPoint('labyrinth_respawn_1')

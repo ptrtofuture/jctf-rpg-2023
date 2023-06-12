@@ -1,0 +1,740 @@
+{
+    "automappingRulesFile": "",
+    "commands": [],
+    "extensionsPath": "extensions",
+    "folders": [
+        "."
+    ],
+    "propertyTypes": [
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 1,
+            "members": [
+                {
+                    "name": "a",
+                    "type": "float",
+                    "value": -1
+                },
+                {
+                    "name": "b",
+                    "type": "float",
+                    "value": -1
+                },
+                {
+                    "name": "g",
+                    "type": "float",
+                    "value": -1
+                },
+                {
+                    "name": "r",
+                    "type": "float",
+                    "value": -1
+                }
+            ],
+            "name": "$color",
+            "type": "class",
+            "useAs": [
+                "property",
+                "map",
+                "layer",
+                "object",
+                "tile",
+                "tileset",
+                "wangcolor",
+                "wangset"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 10,
+            "members": [
+                {
+                    "name": "0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "name": "1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "name": "2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "name": "3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "name": "4",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "name": "5",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "name": "6",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "name": "7",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "name": "8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "name": "9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "name": "more",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "name": "$string[]",
+            "type": "class",
+            "useAs": [
+                "property",
+                "map",
+                "layer",
+                "object",
+                "tile",
+                "tileset",
+                "wangcolor",
+                "wangset"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 13,
+            "members": [],
+            "name": "camera_lock",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 11,
+            "members": [
+                {
+                    "name": "gameFlagName",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "name": "gate_part",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 5,
+            "members": [],
+            "name": "map_view_zone",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 6,
+            "members": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "name": "Meta/Point",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 15,
+            "members": [
+                {
+                    "name": "particleAccelX",
+                    "type": "float",
+                    "value": 0
+                },
+                {
+                    "name": "particleAccelY",
+                    "type": "float",
+                    "value": 0
+                },
+                {
+                    "name": "particleColorEnd",
+                    "propertyType": "$color",
+                    "type": "class",
+                    "value": {}
+                },
+                {
+                    "name": "particleColorStart",
+                    "propertyType": "$color",
+                    "type": "class",
+                    "value": {}
+                },
+                {
+                    "name": "particleLifetime",
+                    "type": "float",
+                    "value": 1000
+                },
+                {
+                    "name": "particleMaxCount",
+                    "type": "float",
+                    "value": 100
+                },
+                {
+                    "name": "particleMaxVelX",
+                    "type": "float",
+                    "value": 0
+                },
+                {
+                    "name": "particleMaxVelY",
+                    "type": "float",
+                    "value": 0
+                },
+                {
+                    "name": "particleMinVelX",
+                    "type": "float",
+                    "value": 0
+                },
+                {
+                    "name": "particleMinVelY",
+                    "type": "float",
+                    "value": 0
+                },
+                {
+                    "name": "particleMulX",
+                    "type": "float",
+                    "value": 1
+                },
+                {
+                    "name": "particleMulY",
+                    "type": "float",
+                    "value": 1
+                },
+                {
+                    "name": "particleSpawnPerSecond",
+                    "type": "float",
+                    "value": 10
+                },
+                {
+                    "name": "particleSprite",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "name": "spritesheet",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "name": "particles",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 99,
+            "members": [],
+            "name": "persist_flag",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 9,
+            "members": [
+                {
+                    "name": "areaName",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "name": "player_enter_area",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 14,
+            "members": [],
+            "name": "player_no_death_area",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 12,
+            "members": [
+                {
+                    "name": "pointName",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "name": "player_respawn_area",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 18,
+            "members": [
+                {
+                    "name": "pointName",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "name": "player_tp_area",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 19,
+            "members": [
+                {
+                    "name": "collectOnCollide",
+                    "type": "boolean",
+                    "value": true
+                },
+                {
+                    "name": "collectedPosX",
+                    "type": "float",
+                    "value": 0
+                },
+                {
+                    "name": "collectedPosY",
+                    "type": "float",
+                    "value": 0
+                }
+            ],
+            "name": "card",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 16,
+            "members": [],
+            "name": "renderer:particles",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 17,
+            "members": [
+                {
+                    "name": "gameFlagName",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "name": "isInverse",
+                    "type": "boolean",
+                    "value": false
+                },
+                {
+                    "name": "minY",
+                    "type": "int",
+                    "value": 0
+                },
+                {
+                    "name": "maxY",
+                    "type": "int",
+                    "value": 0
+                }
+            ],
+            "name": "barrier",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 20,
+            "members": [
+                {
+                    "name": "offsetY",
+                    "type": "float",
+                    "value": 0
+                }
+            ],
+            "name": "auto_sprite_layer",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 97,
+            "members": [
+                {
+                    "name": "isSolid",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "isStatic",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "isTrigger",
+                    "type": "bool",
+                    "value": false
+                },
+                {
+                    "name": "isTileTrigger",
+                    "type": "bool",
+                    "value": false
+                },
+                {
+                    "name": "isPlayerOnlyTrigger",
+                    "type": "bool",
+                    "value": false
+                }
+            ],
+            "name": "shape_collider",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 98,
+            "members": [
+                {
+                    "name": "isSolid",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "isStatic",
+                    "type": "bool",
+                    "value": true
+                },
+                {
+                    "name": "isTrigger",
+                    "type": "bool",
+                    "value": false
+                },
+                {
+                    "name": "isTileTrigger",
+                    "type": "bool",
+                    "value": false
+                },
+                {
+                    "name": "isPlayerOnlyTrigger",
+                    "type": "bool",
+                    "value": false
+                }
+            ],
+            "name": "sprite_collider",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 8,
+            "members": [
+                {
+                    "name": "sprites",
+                    "propertyType": "$string[]",
+                    "type": "class",
+                    "value": {}
+                },
+                {
+                    "name": "switchInterval",
+                    "type": "float",
+                    "value": 1
+                }
+            ],
+            "name": "test_sprite_switch",
+            "type": "class",
+            "useAs": [
+                "property",
+                "map",
+                "layer",
+                "object",
+                "tile",
+                "tileset",
+                "wangcolor",
+                "wangset"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 100,
+            "name": "card_drop_area",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ],
+            "members": [
+                {
+                    "name": "card",
+                    "type": "object",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 101,
+            "name": "challenge_select",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ],
+            "members": []
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 102,
+            "name": "labyrinth_3_challenge_panel",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ],
+            "members": [
+                {
+                    "name": "gameFlagName",
+                    "type": "string",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 103,
+            "name": "labyrinth_5_challenge_coordinator",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ],
+            "members": []
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 104,
+            "name": "labyrinth_5_challenge_panel",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ],
+            "members": [
+                {
+                    "name": "coordinator",
+                    "type": "object",
+                    "value": 0
+                },
+                {
+                    "name": "value_no",
+                    "type": "number",
+                    "value": 0
+                },
+                {
+                    "name": "value_0",
+                    "type": "number",
+                    "value": 0
+                },
+                {
+                    "name": "value_1",
+                    "type": "number",
+                    "value": 1
+                },
+                {
+                    "name": "value_2",
+                    "type": "number",
+                    "value": 2
+                },
+                {
+                    "name": "value_3",
+                    "type": "number",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 105,
+            "name": "labyrinth_finale_challenge_panel",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ],
+            "members": [
+                {
+                    "name": "gameFlagName",
+                    "type": "string",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 106,
+            "name": "map_single_sign",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ],
+            "members": [
+                {
+                    "name": "text",
+                    "type": "string",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 107,
+            "name": "toggle_game_flag_panel",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ],
+            "members": [
+                {
+                    "name": "gameFlagName",
+                    "type": "string",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 108,
+            "name": "toggle_sprite",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ],
+            "members": [
+                {
+                    "name": "sprite_on",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "name": "sprite_off",
+                    "type": "string",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 109,
+            "name": "trial_of_bugs_finale_challenge_panel",
+            "type": "class",
+            "useAs": [
+                "property",
+                "object"
+            ],
+            "members": []
+        }
+    ]
+}

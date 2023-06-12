@@ -1,0 +1,25 @@
+namespace component.toggle_sprite
+
+T is Toggle
+
+meta:
+components = ['interactable']
+props = {sprite_on: 'string', sprite_off: 'string'}
+
+construct:
+self.sprite_on = ''
+self.sprite_off = ''
+self.value = false
+
+init:
+interactable.interactText = "Toggle"
+
+interact:
+T: You can toggle this switch. Do you want to?
+> Yes
+  self.value = !self.value
+  sprite.sprite = self.value ? self.sprite_on : self.sprite_off
+  emit({ type: 'toggle', entity: transform.name, toValue: self.value })
+  T: Gotcha!
+> No
+  T: Maybe another time!

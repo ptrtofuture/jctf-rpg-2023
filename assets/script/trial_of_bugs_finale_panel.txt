@@ -1,0 +1,21 @@
+namespace component.trial_of_bugs_finale_challenge_panel
+
+P is Panel
+
+meta:
+components = ['interactable']
+props = {}
+
+construct:
+
+init:
+interactable.interactText = "Use panel"
+
+interact:
+P: This is the flag dispenser service, provided for free by jCTF.
+P: Contacting the server for the flag...
+player.flagReveal.reveal('trial_of_bugs_flag', 'TRIAL_OF_BUGS')
+task(tasks.gameGlobalSet('trial_of_bugs_flag'))
+flag = player.globalData.get('trial_of_bugs_flag')
+P: Your flag is: {flag}
+P: System recommendation: Also try Trial of Data!
